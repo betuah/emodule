@@ -144,6 +144,12 @@ android {
         }
     }
     signingConfigs {
+        release {
+            storeFile file('emodu.keystore')
+            storePassword 'br4v0d!tPMPK'
+            keyAlias 'emodulpmpkKey'
+            keyPassword 'br4v0d!tPMPK'
+        }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
